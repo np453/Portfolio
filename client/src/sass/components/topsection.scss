@@ -1,0 +1,42 @@
+.home_wrapper{
+    // background: #606060;
+    background-image: url(../../assets/topsection.svg);
+    background-repeat: no-repeat;
+    
+    height: 100vh;
+    background-size: contain;
+    .intro_wrapper{
+        position: absolute;
+        right: 15%;
+        top:15%;        
+        .intro_text{
+            font-size:3.5rem;
+            font-family: $font-1;
+            font-weight:600;
+            color: #DECA62;    
+        }
+    }
+    .desig_wrapper{
+        position: absolute;
+        top: 670px;
+        left: 4%;
+        .desig_text{
+            color: #606060;
+            font-size:3.5rem;
+            font-family: $font-1;
+            font-weight:600;
+        }  
+    }
+
+}
+.background_{
+    background: #606060;
+}
+.timeline-container{
+    border-right: 1rem solid #DECA62;
+    height:1000px;
+}
+.timeline_wrapper{
+    width: 2rem;
+    
+}

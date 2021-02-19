@@ -1,0 +1,13 @@
+//for fonts
+@import './abstracts/fonts.scss';
+
+//navbar css
+@import './components/navbar.scss';
+
+@import './components/topsection.scss';
+
+
+
+html {
+    scroll-behavior: smooth;
+}
