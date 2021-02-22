@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Navbar from '../components/navbar';
+import Footer from '../components/footer';
 
 class Homepage extends Component {
     render() {
@@ -19,16 +20,19 @@ class Homepage extends Component {
                     </div>
                 </div>
                 <div className="row m-0">
-                    <div className="col-md-3">
-                        <div className="container timeline_wrapper">
-                            <div className="timeline-container"></div>
+                    <div className="col-md-1">
+                        <div className="container-fluid timeline_wrapper timeline-container">
+                            {/* <div className=""></div> */}
                         </div>
 
                     </div>
                     <div className="col-md-9">
 
                     </div>
+                   
                 </div>
+                   
+                <Footer/>
             </div>
         );
     }

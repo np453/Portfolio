@@ -10,19 +10,19 @@
         right: 15%;
         top:15%;        
         .intro_text{
-            font-size:3.5rem;
+            font-size:3rem;
             font-family: $font-1;
             font-weight:600;
             color: #DECA62;    
         }
     }
     .desig_wrapper{
-        position: absolute;
-        top: 670px;
+        position: relative;
+        top: 80%;
         left: 4%;
         .desig_text{
             color: #606060;
-            font-size:3.5rem;
+            font-size:3rem;
             font-family: $font-1;
             font-weight:600;
         }  
@@ -35,8 +35,9 @@
 .timeline-container{
     border-right: 1rem solid #DECA62;
     height:1000px;
+    margin-left : -50px;
 }
 .timeline_wrapper{
     width: 2rem;
-    
+    margin-left : -50px;
 }
