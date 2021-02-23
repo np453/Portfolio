@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Navbar from '../components/navbar';
 import Footer from '../components/footer';
+import Interest from '../components/interest';
 
 class Homepage extends Component {
     render() {
@@ -19,10 +20,17 @@ class Homepage extends Component {
 
                     </div>
                 </div>
-                <div className="row m-0">
+                <div className="timeline-bg">
+                    <div className="d-flex flex-column justify-content-center align-items-center">
+                       <Interest /> 
+                       <Interest />
+                       <Interest />
+                    </div>
+                    
+                </div>
+                {/* <div className="row m-0">
                     <div className="col-md-1">
                         <div className="container-fluid timeline_wrapper timeline-container">
-                            {/* <div className=""></div> */}
                         </div>
 
                     </div>
@@ -30,7 +38,7 @@ class Homepage extends Component {
 
                     </div>
                    
-                </div>
+                </div> */}
                    
                 <Footer/>
             </div>

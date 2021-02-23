@@ -1,5 +1,6 @@
 import React from 'react';
 import {BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import Interest from './components/interest';
 
 //scss file
 import "./sass/main.scss";
@@ -16,6 +17,7 @@ function App() {
         {/* <ScrollToTop> */}
         <switch>
           <Route path="/" exact component={Homepage} />
+          <Route path="/test" exact component={Interest} />
         </switch>
         {/* </ScrollToTop> */}
       </Router>

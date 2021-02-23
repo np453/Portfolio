@@ -1,0 +1,57 @@
+.card_wrapper_y{
+    background: #DECA62;
+    width:60%;
+    top:10%; 
+    padding-bottom: 7px; 
+    padding-left: 7px;  
+
+    .card_main_body{
+        background: #6F6F6F;
+        .interest_title{
+            font-family: $font-1;
+            font-weight: 600;
+            color: #DECA62;
+        }
+        .skill_wrapper{
+            margin-top: 20px;   
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            
+            .skill-wrapper{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                
+            }
+            .skill-col-wrapper{
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                margin-bottom: 10px;
+            }
+        }
+    }
+}
+.skill-img{
+     width: 35%;
+}
+.description_text{
+    margin-top: 10px;
+    color: #E1DDDD;
+    font-family: $font-1;
+    font-size: 1rem;
+    width:40%;
+    text-align: center;
+}
+.description-col-text{
+    margin-top: 10px;
+    color: #E1DDDD;
+    font-family: $font-1;
+    font-size: 1rem;
+    width:60%;
+    text-align: center;
+}

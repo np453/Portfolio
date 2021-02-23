@@ -9,9 +9,6 @@ class Navbar extends Component {
     render() {
         return (
             <div className="navbar__container container-fluid p-0">
-
-
-                {/* <div className="container nav_container">  */}
                 <nav className={"navbar navbar-expand-lg "}>
                     <div className="navbar-brand" style={{color:"#393939"}}>
                     <img className="img img-fluid nav_icon" src={Navicon} alt="Navbar Icon"/>
@@ -34,7 +31,6 @@ class Navbar extends Component {
                     
                 </nav>
             </div>
-            // </div>
         );
     }
 }
