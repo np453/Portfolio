@@ -3,14 +3,17 @@
     width:60%;
     top:10%; 
     padding-bottom: 7px; 
-    padding-left: 7px;  
+    padding-left: 7px; 
 
     .card_main_body{
         background: #6F6F6F;
+        margin-top: -7px;
+        margin-right: -7px;
         .interest_title{
             font-family: $font-1;
             font-weight: 600;
             color: #DECA62;
+            padding-top: 30px;
         }
         .skill_wrapper{
             margin-top: 20px;   
@@ -18,6 +21,7 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
+            padding-top: 30px;
             
             .skill-wrapper{
                 display: flex;

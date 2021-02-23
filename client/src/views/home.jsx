@@ -23,8 +23,6 @@ class Homepage extends Component {
                 <div className="timeline-bg">
                     <div className="d-flex flex-column justify-content-center align-items-center">
                        <Interest /> 
-                       <Interest />
-                       <Interest />
                     </div>
                     
                 </div>

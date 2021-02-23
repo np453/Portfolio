@@ -20,18 +20,18 @@ export default class footer extends Component {
                             
                             <h1 className="name_text ">Naman Patel</h1>
                             <h3 className="clg_name">B.Tech, Motilal Nehru National Institute of Technology Allahabad </h3>
-                            <img src={sign} className="img-fluid" />
+                            <img src={sign} className="img-fluid sign_img" />
 
                          </div>
                          <div className="col-md-8 d-flex flex-column links_wrapper">
 
-                             <div className="d-flex justify-content-between">
-                                <div className="col-md-8 ">
+                             <div className="d-flex justify-content-between ">
+                                <div className="col-md-8 d-flex flex-row">
                                   <h4>Mail to:</h4>
-                                  <img src={gmail} className="pl-4 pr-4"/>
+                                  <img src={gmail} className="pl-4 pr-4 mail_img"  />
                                   <h3>{this.mymail}</h3>
                                 </div>  
-                                <div className="col-md-4 ">
+                                <div className="col-md-4 d-flex flex-row ">
                                   <img src={github} className="git_image pr-4"/>
                                   <h3>{this.mygit}</h3>
                                 </div>
