@@ -1,0 +1,35 @@
+.project_wrapper{
+    background: #DECA62;
+    width: 60%;
+    margin-top: 40px;
+    padding-left: 7px;
+    padding-bottom: 7px;
+    .project_card{
+        background: #6F6F6F;
+        margin-top: -7px;
+        margin-right: -7px;
+
+        .project_card_title{
+            color:#DECA62;
+            font-family: $font-1;
+            font-weight: 600;
+            padding-top: 30px;
+        }
+        .project_title{
+            color:#DECA62;
+            font-family: $font-1;
+            font-weight: 400;
+        }
+        .project_desc{
+            color:#E1DDDD;
+            font-family: $font-1;
+            font-weight: 200;
+            font-size: 1.2rem;
+        }
+        .link_name{
+            color:#E1DDDD;
+            margin-left: 10px;
+            font-size: 1rem;
+        }
+    }
+}
