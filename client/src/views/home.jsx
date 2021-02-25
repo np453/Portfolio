@@ -3,6 +3,7 @@ import Navbar from '../components/navbar';
 import Footer from '../components/footer';
 import Interest from '../components/interest';
 import Projects from '../components/myprojects';
+import Colaborate from '../components/colaborate';
 
 class Homepage extends Component {
     render() {
@@ -34,13 +35,11 @@ class Homepage extends Component {
                         <div className="container-fluid timeline_wrapper timeline-container">
                         </div>
 
+                    <div className="d-flex flex-column justify-content-center align-items-center mt-5">
+                       <Colaborate /> 
                     </div>
-                    <div className="col-md-9">
-
-                    </div>
-                   
-                </div> */}
-                   
+                    
+                </div>   */}                
                 <Footer/>
             </div>
         );

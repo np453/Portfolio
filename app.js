@@ -22,12 +22,14 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }))
 app.use(express.json());
 
+
+
 //routes
 app.use('/api/project',project);
 
-
 //connect to DB
 mongoose.connect(process.env.MONGO_URI, { useNewUrlParser: true, useUnifiedTopology: true }, () => console.log("Database is connected!"));
+
 
 app.use(express.static('client/build'));
 

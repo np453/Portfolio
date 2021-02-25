@@ -14,7 +14,7 @@ const storage = multer.diskStorage({
 
 const upload = multer({ storage: storage }).single('file');
 
-// post route for carousel
+// post route for project
 router.post('/', upload , async(req, res) => {
     
         let work = new sets({
@@ -25,18 +25,18 @@ router.post('/', upload , async(req, res) => {
             filename:req.file.filename        
         })
         const savedWork = await work.save()
-        res.send(savedWork)
+        // res.send(savedWork)
         return res.status(200).send(req.file)
 });
 
 
-//Get route for carousel
+//Get route for project
 router.get('/', async(req, res) => {
   const allsets = await sets.find({ })
   const Sets = [];
   for(let i=0;i<allsets.length;i++) {
     // element array with mongo object id
-    Sets.push( {_id:allsets[i]._id,route:"project",name:allsets[i].name,github:allsets[i].github,link:allsets[i].link,description:allsets[i].description,filename:allsets[i].file.filename} )
+    Sets.push( {_id:allsets[i]._id,route:"project",name:allsets[i].name,github:allsets[i].github,link:allsets[i].link,description:allsets[i].description,filename:allsets[i].filename} )
   }
   // sending array as response 
   res.send(Sets)
