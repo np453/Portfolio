@@ -52,20 +52,14 @@ class Homepage extends Component {
                     <div className="d-flex flex-column justify-content-center align-items-center">
                        <Interest /> 
                     </div>
-                    <div className="d-flex flex-column justify-content-center align-items-center">
+                    <div className="d-flex flex-column justify-content-center align-items-center mt-5">
                        <Projects/> 
                     </div>
-                </div>
-                {/* <div className="row m-0">
-                    <div className="col-md-1">
-                        <div className="container-fluid timeline_wrapper timeline-container">
-                        </div>
-
                     <div className="d-flex flex-column justify-content-center align-items-center mt-5">
                        <Colaborate /> 
                     </div>
-                    
-                </div>   */}                
+                </div>
+                               
                 <Footer/>
             </div>
         );
