@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import axios from 'axios';
+import { base } from '../../base';
 
 class Dashboard extends Component {
     state={
@@ -25,7 +26,7 @@ class Dashboard extends Component {
     onClickHandlerProject= async() =>{
         const data = new FormData() 
               
-        data.append('name', this.state.data.speakerName)
+        data.append('name', this.state.data.ProjectName)
         data.append('github', this.state.data.projectgithub)
         data.append('link', this.state.data.external)
         data.append('description', this.state.data.ProjectDescription)
@@ -35,7 +36,7 @@ class Dashboard extends Component {
                 'content-type': 'multipart/form-data'
             }
         };
-      axios.post("/api/project", data, config)
+      axios.post(base + "/api/project", data, config)
         .then(res => { // then print response status
           console.log('upload success')
         })
@@ -44,20 +45,20 @@ class Dashboard extends Component {
         })
     }
 
-    handleclick_getapi=async(route)=>{
-        const data= await axios.get(`/api/${route}/`);
+    handleClick_getapi=async(route)=>{
+        const data= await axios.get(`${base}/api/${route}/`);
         
-        this.setState({show:data.data, showApi:true});
+        this.setState({show:data.data, showapi:true});
         
     }
 
     handledelete=async(id,route)=>{
-        await axios.put(`/api/${route}/delete/${id}`);
-        const data = axios.get(`/${route}`);
+        await axios.put(base + `/api/${route}/delete/${id}`);
+        // const data = axios.get(`/${route}`);
         }
 
         loadForms = () => {
-            this.setState({ showApi:false })
+            this.setState({ showapi:false })
         }
 
     render() {
@@ -124,7 +125,7 @@ class Dashboard extends Component {
                     <h3 className="text-center">API</h3>
                     {/* List displaying Api Including delete feature */}
                     <ul className="admin_dashboard_api_list list-group">
-                        <li onClick={()=>this.handleClick_getapi("project")} className="list-group-item ">Projects</li>
+                        <li onClick={()=>this.handleClick_getapi("project")} className="list-group-item" style={{cursor:"pointer"}}>Projects</li>
                         
                     </ul>
                     <Link style={{ color:"black", textDecoration:"none" }} to="/">Back to Home</Link>
