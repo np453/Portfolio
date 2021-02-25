@@ -5,7 +5,8 @@ const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
 const dotenv = require('dotenv');
 const path = require('path');
-// const { connected } = require('process');
+
+const project = require('./routes/project');
 
 
 //Port
@@ -21,6 +22,8 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }))
 app.use(express.json());
 
+//routes
+app.use('/api/project',project);
 
 
 //connect to DB

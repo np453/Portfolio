@@ -1,7 +1,7 @@
-<svg width="1920" height="440" viewBox="0 0 1920 440" fill="none" xmlns="http://www.w3.org/2000/svg">
+<svg width="1920" height="290" viewBox="0 0 1920 290" fill="none" xmlns="http://www.w3.org/2000/svg">
 <rect width="60" height="20" transform="matrix(1 0 0 -1 219 40)" fill="#DECA62"/>
 <circle r="20" transform="matrix(1 0 0 -1 278 20)" fill="#606060"/>
 <circle r="20" transform="matrix(1 0 0 -1 218 20)" fill="#606060"/>
-<rect y="40" width="1920" height="400" fill="#606060"/>
-<path fill-rule="evenodd" clip-rule="evenodd" d="M1919.71 440L0 40.061L0 40L1920 40V440H1919.71Z" fill="#DECA62"/>
+<rect y="40" width="1920" height="250" fill="#606060"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M1919.7 290L0 40.0385L0 40L1920 40V290H1919.7Z" fill="#DECA62"/>
 </svg>

@@ -1,0 +1,18 @@
+.admin_dashboard {
+    .api_list {
+        padding: 3rem;
+    }
+    input[type="file"] {
+        display: none;
+    }
+    .admin_dashboard_api_list {
+        &:hover {
+            cursor: pointer;
+        }
+        li {
+            &:hover {
+                background-color: rgba(grey, 0.1);
+            }
+        }
+    }
+}

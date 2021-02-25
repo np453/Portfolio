@@ -1,5 +1,4 @@
 .home_wrapper{
-    // background: #606060;
     background-image: url(../../assets/topsection.svg);
     background-repeat: no-repeat;
     
@@ -17,9 +16,8 @@
         }
     }
     .desig_wrapper{
-        position: relative;
-        top: 80%;
-        left: 4%;
+        padding-top: 40%;
+        padding-left: 4%;
         width:60%;
         .desig_text{
             color: #606060;
@@ -31,15 +29,15 @@
 
 }
 .background_{
-    // background: #606060;
+    background: #606060;
     background-image: url(../../assets/line_bg.svg);
     background-size: contain;
-    background-repeat: initial;
+    background-repeat: repeat-y;
 }
 .timeline-container{
     border-right: 1rem solid #DECA62;
-    height:1000px;
-    margin-left : -50px;
+    height: 1000px;
+    margin-left: -50px;
 }
 .timeline_wrapper{
     width: 2rem;
