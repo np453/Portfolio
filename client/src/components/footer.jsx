@@ -12,7 +12,12 @@ import fb from '../assets/fb.svg'
 export default class footer extends Component {
      mymail= "namanpatel453@gmail.com";
      mygit= "np453";
+     mygitlink= "https://github.com/np453";
+     myinsta="https://www.instagram.com/naman_072/";
+     mylinkedin="https://www.linkedin.com/in/naman-patel-a9b260176/";
+     myfb="https://www.facebook.com/npns99";
     render() {
+      
         return (
             <div className="container-fluid footer_wrapper">
                     <div className="row">
@@ -23,24 +28,34 @@ export default class footer extends Component {
                             <img src={sign} className="img-fluid sign_img" />
 
                          </div>
-                         <div className="col-md-8 d-flex flex-column links_wrapper">
+                         <div className="col-md-6 d-flex flex-column links_wrapper">
 
                              <div className="d-flex justify-content-between ">
                                 <div className="col-md-8 d-flex flex-row">
                                   <h4>Mail to:</h4>
                                   <img src={gmail} className="pl-4 pr-4 mail_img"  />
+                                  <a   href={"mail to:" + this.mymail} className="A_link_name">
+                                  
                                   <h3>{this.mymail}</h3>
+                                  </a>
                                 </div>  
                                 <div className="col-md-4 d-flex flex-row ">
                                   <img src={github} className="git_image pr-4"/>
-                                  <h3>{this.mygit}</h3>
+                                  <a  className="A_link_name" href={this.mygitlink}>
+                                  <h3>{this.mygit}</h3></a>
                                 </div>
                              </div>  
-                             <div className=" follow_section">
+                             <div className=" follow_section d-flex flex-row justify-content-start">
                                   <h3>Follow me on</h3>
+                                  <a  className="A_link_name" href={this.mylinkedin}>
                                   <img src={linkedin} className="pl-4 pr-4"/>
+                                  </a>
+                                  <a  className="A_link_name" href={this.myfb}>
                                   <img src={fb} className="pl-4 pr-4"/>
+                                  </a>
+                                  <a  className="A_link_name" href={this.myinsta}>
                                   <img src={insta} className="pl-4 pr-4"/>
+                                  </a>
                              </div>  
                          </div>
                     </div>

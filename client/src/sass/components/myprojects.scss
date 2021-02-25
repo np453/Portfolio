@@ -37,6 +37,10 @@
         .project-img{
             border-radius: 20px;
             pointer-events: none;
+            width: 60%;
+            height: 60%;
+            object-fit:cover;
+
         }
     }
 }

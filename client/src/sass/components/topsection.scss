@@ -59,6 +59,15 @@
     .home_wrapper{
         background-image: url(../../assets/topsection_900.svg);
     }
+    .desig_wrapper{
+        padding-top: 60%;
+        padding-left: 4%;
+        width:60%;
+        .desig_text{
+            font-size:1rem;
+            
+        }  
+    }
 }
 @media (max-width:700px){
     .home_wrapper{

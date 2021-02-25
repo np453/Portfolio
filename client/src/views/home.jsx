@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import axios from 'axios';
 import Navbar from '../components/navbar';
 import Footer from '../components/footer';
 import Interest from '../components/interest';
@@ -9,11 +10,16 @@ import Timeline_Arrow from '../assets/timeline_arrow.svg';
 class Homepage extends Component {
     state={
         theposition:"",
-        showPointer: false
+        showPointer: false,
+        projects: [],
+
     }
 
-    componentDidMount() {
-        window.addEventListener('scroll', this.listenToScroll)
+    componentDidMount= async()=> {
+        window.addEventListener('scroll', this.listenToScroll);
+        const project= await axios.get('/api/project');
+        this.setState({projects:project.data});
+        console.log(this.state.projects);
       }
       
       componentWillUnmount() {
@@ -53,7 +59,7 @@ class Homepage extends Component {
                        <Interest /> 
                     </div>
                     <div className="d-flex flex-column justify-content-center align-items-center mt-5">
-                       <Projects/> 
+                       <Projects projects={this.state.projects}/> 
                     </div>
                     <div className="d-flex flex-column justify-content-center align-items-center mt-5">
                        <Colaborate /> 
