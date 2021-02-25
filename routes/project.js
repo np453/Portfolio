@@ -5,7 +5,7 @@ const sets = require('../model/project');
 // Multer for storing image 
 const storage = multer.diskStorage({
   destination: function (req, file, cb) {
-    cb(null, 'client/public/media/projects')
+    cb(null, 'client/public/media/project')
   },
   filename: function (req, file, cb) {
     cb(null, Date.now() + '-' +file.originalname )

@@ -43,6 +43,12 @@
     width: 2rem;
     margin-left : -50px;
 }
+.timeline-arrow{
+    position: fixed;
+    top:50%;
+    left:10.8%;
+    width: 4%;
+}
 
 @media (max-width:1400px){
     .home_wrapper{

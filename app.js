@@ -37,7 +37,12 @@ app.get('*', (req,res) =>{
   res.sendFile(path.join(__dirname+'/client/build/index.html'));
 });
 
-
+//media api
+app.get('/media/project/:file_name',(req,res)=>{
+  
+  res.sendFile(path.join(__dirname+"/media/project/"+req.params.file_name));
+  
+})
 
 
 
