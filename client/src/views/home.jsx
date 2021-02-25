@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Navbar from '../components/navbar';
 import Footer from '../components/footer';
 import Interest from '../components/interest';
+import Projects from '../components/myprojects';
 
 class Homepage extends Component {
     render() {
@@ -24,7 +25,9 @@ class Homepage extends Component {
                     <div className="d-flex flex-column justify-content-center align-items-center">
                        <Interest /> 
                     </div>
-                    
+                    <div className="d-flex flex-column justify-content-center align-items-center">
+                       <Projects/> 
+                    </div>
                 </div>
                 {/* <div className="row m-0">
                     <div className="col-md-1">
