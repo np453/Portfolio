@@ -59,6 +59,67 @@
     width:60%;
     text-align: center;
 }
-@media (max-width:998px){
+@media (max-width:768px){
+    .interest_title{
+       
+        font-weight: 400;
+        padding-top: 30px;
+    }
+    .skill-img{
+        width: 25%;
+   }
+   .card_wrapper_y{
+       .card_main_body{
+        .skill_wrapper{
+            margin-top:0px !important;
+            padding-top: 0px !important;
+            padding-bottom: 20px;
+           .skill-wrapper{
+             padding-top: 10%;
+           }
+       }
 
+       }
+   }
+   
+}
+@media (max-width:580px){
+    .interest_title{
+        font-size: 2rem;
+       
+    }
+}
+@media (max-width:450px){
+    .interest_title{
+        font-size: 1.5rem;
+       
+    }
+    .description_text{
+       
+        font-size: 0.7rem;
+        width:60%;
+    }
+    .description-col-text{
+        
+        font-size: 0.7rem;
+        width:60%;
+       
+    }
+}
+@media (max-width:380px){
+    .interest_title{
+        font-size: 1.2rem;
+       
+    }
+    .description_text{
+       
+        font-size: 0.6rem;
+        width:60%;
+    }
+    .description-col-text{
+        
+        font-size: 0.6rem;
+        width:60%;
+       
+    }
 }

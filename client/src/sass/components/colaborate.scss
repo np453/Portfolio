@@ -1,9 +1,13 @@
+.colab_body{
+    padding: 30px;
+}
 .colaborate-title{
     margin-bottom: 5%;
     font-size: 2rem;
     font-family: $font-1;
     font-weight: 600;
     color: #DECA62;
+    text-align: center;
 }
 .colaborate-button{
     border-radius: 5%;
@@ -16,6 +20,7 @@
     font-family: $font-1;
     color: #E1DDDD;
     margin-bottom: 4%;
+    text-align: center;
 }
 .colaborate-label{
     font-size: 1.5rem;
@@ -23,6 +28,7 @@
     color: #DECA62;
     margin-bottom: 6%;
     font-weight: 600;
+    text-align: center;
 }
 .MuiButton-label{
     font-family: $font-1;
@@ -33,4 +39,62 @@
 }
 .MuiButton-contained{
     background-color: #DECA62 !important;
+}
+
+@media(max-width:768px){
+    .colaborate-title{
+        margin-bottom: 6%;
+        font-size: 1.3rem;  
+    }
+    .colaborate-teaser{
+        font-size: 0.7rem;       
+    }
+    .colaborate-label{
+        font-size: 1rem;
+        margin-bottom: 6%;
+        font-weight: 600;
+    }
+    .MuiButton-label{
+       
+        font-size: 0.7rem;
+    }
+}
+@media(max-width:450px){
+    .colaborate-title{
+        margin-bottom: 9%;
+        font-size: 1rem;  
+    }
+    .colaborate-teaser{
+        font-size: 0.5rem;       
+    }
+    .colaborate-label{
+        font-size: 0.7rem;
+        margin-bottom: 9%;
+        font-weight: 600;
+    }
+    .MuiButton-label{
+       
+        font-size: 0.5rem;
+    }
+}
+@media(max-width:380px){
+    .colaborate-title{
+        margin-bottom: 9%;
+        font-size: 0.7rem;  
+    }
+    .colaborate-teaser{
+        font-size: 0.3rem;       
+    }
+    .colaborate-label{
+        font-size: 0.5rem;
+        margin-bottom: 9%;
+        font-weight: 600;
+    }
+    .MuiButton-label{
+       
+        font-size: 0.3rem;
+    }
+    .colab_body{
+        padding: 15px;
+    }
 }

@@ -13,7 +13,13 @@
             color:#DECA62;
             font-family: $font-1;
             font-weight: 600;
-            padding-top: 30px;
+            padding-top: 10px;
+        }
+        .project-item-wrapper{
+            padding-bottom: 8%; 
+        }
+        .project-item-text{
+            margin-top: 20% !important;
         }
         .project_title{
             color:#DECA62;
@@ -41,6 +47,96 @@
             height: 60%;
             object-fit:cover;
 
+        }
+    }
+}
+@media(max-width: 1150px){
+    .link_name{
+        font-size: 0.7rem !important;
+    }
+    .project_item{
+       // padding:20px !important;
+        margin-left: 20px !important;
+    }
+    .project_title{
+       font-size: 1.5rem !important; 
+    }
+    .project_desc{
+        font-size: 1rem !important;
+    }
+    .project_item{
+        margin-top: -5%; 
+    }
+    .project-img{
+        border-radius: 20px;
+        pointer-events: none;
+        width: 50% !important;
+        height: 80% !important;
+        object-fit:cover;
+
+    }
+}
+@media(max-width: 768px){
+    .project_card{
+        h4{
+            font-size: 1.5rem;
+        }
+        h1{
+            font-size: 2rem !important;
+        }
+        h3{
+            font-size: 1.2rem;
+        }
+        .project_desc{
+            font-size: 0.7rem;
+        }
+    }
+}
+@media(max-width: 480px){
+    .project_card{
+        h4{
+            font-size: 1.2rem;
+        }
+        h1{
+            font-size: 1.5rem !important;
+        }
+        h3{
+            font-size: 1rem !important;
+        }
+        .project_desc{
+            font-size: 0.6rem !important;
+        }
+    }
+    .link_name{
+        font-size: 0.4rem !important;
+    }
+    .project_item{
+        img{
+            width: 20%;
+        }
+    }
+}
+@media(max-width: 380px){
+    .project_card{
+        h4{
+            font-size: 0.8rem;
+        }
+        h1{
+            font-size: 1.2rem !important;
+        }
+        h3{
+            font-size: 1rem !important;
+        }
+        .project_desc{
+            font-size: 0.6rem !important;
+        }
+    }
+    .link_name{
+        font-size: 0.3rem !important;
+    }
+    .project_item{
+        img{
+            width: 20%;
         }
     }
 }

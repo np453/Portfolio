@@ -39,7 +39,7 @@ export default class footer extends Component {
                                   <h3>{this.mymail}</h3>
                                   </a>
                                 </div>  
-                                <div className="col-md-4 d-flex flex-row align-items-center">
+                                <div className="col-md-4 d-flex flex-row align-items-center git-wrapper">
                                   <img src={github} className="git_image pr-4"/>
                                   <a  className="A_link_name" href={this.mygitlink}>
                                   <h3 className="git_name">{this.mygit}</h3></a>

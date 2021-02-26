@@ -171,3 +171,23 @@
         }
     }
 }
+@media (max-width:300px){
+    .home_wrapper{
+        background-image: url(../../assets/topsection_350.svg);
+    }
+    .desig_wrapper{
+        padding-top: 135% !important;
+        padding-left: 4%;
+        width:60%;
+        .desig_text{
+            font-size:1.2rem !important;
+        }  
+    }
+    .intro_wrapper{     
+        .intro_text{
+            font-size:1.2rem !important;
+            
+        }
+    }
+}
+
