@@ -35,22 +35,6 @@ export default class Myprojects extends Component {
                     </div>
                   ))
                   }
-                    {/* <div className="row">
-                        <div className="col-md-4">
-
-                        </div>
-                        <div className="col-md-8">
-
-                        </div>
-                    </div>
-                    <div className="row">
-                        <div className="col-md-4">
-
-                        </div>
-                        <div className="col-md-8">
-
-                        </div>
-                    </div>     */}
             </div>
         </div>    
         )

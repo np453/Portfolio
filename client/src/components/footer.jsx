@@ -30,23 +30,23 @@ export default class footer extends Component {
                          </div>
                          <div className="col-md-6 d-flex flex-column links_wrapper">
 
-                             <div className="d-flex justify-content-between ">
+                             <div className="row">
                                 <div className="col-md-8 d-flex flex-row">
                                   <h4>Mail to:</h4>
-                                  <img src={gmail} className="pl-4 pr-4 mail_img"  />
-                                  <a   href={"mail to:" + this.mymail} className="A_link_name">
-                                  
+                                  <a  href={"mailto:" + this.mymail}>
+                                  <img src={gmail} className="pl-4 pr-4 mail_img"  /></a>
+                                  <a  href={"mailto:" + this.mymail} className="A_link_name A_mail_name">
                                   <h3>{this.mymail}</h3>
                                   </a>
                                 </div>  
-                                <div className="col-md-4 d-flex flex-row ">
+                                <div className="col-md-4 d-flex flex-row align-items-center">
                                   <img src={github} className="git_image pr-4"/>
                                   <a  className="A_link_name" href={this.mygitlink}>
-                                  <h3>{this.mygit}</h3></a>
+                                  <h3 className="git_name">{this.mygit}</h3></a>
                                 </div>
                              </div>  
-                             <div className=" follow_section d-flex flex-row justify-content-start">
-                                  <h3>Follow me on</h3>
+                             <div className=" follow_section d-flex flex-row justify-content-start align-items-center">
+                                  <h3 className="A_follow">Follow me on</h3>
                                   <a  className="A_link_name" href={this.mylinkedin}>
                                   <img src={linkedin} className="pl-4 pr-4"/>
                                   </a>

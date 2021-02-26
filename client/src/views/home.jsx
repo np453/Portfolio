@@ -6,18 +6,18 @@ import Interest from '../components/interest';
 import Projects from '../components/myprojects';
 import Colaborate from '../components/colaborate';
 import Timeline_Arrow from '../assets/timeline_arrow.svg';
+import { base } from '../base';
 
 class Homepage extends Component {
     state={
         theposition:"",
         showPointer: false,
-        projects: [],
-
+        projects: []
     }
 
     componentDidMount= async()=> {
         window.addEventListener('scroll', this.listenToScroll);
-        const project= await axios.get('/api/project');
+        const project= await axios.get(base + '/api/project');
         this.setState({projects:project.data});
         console.log(this.state.projects);
       }
@@ -27,7 +27,7 @@ class Homepage extends Component {
       }
       
       listenToScroll = () => {
-        if(window.pageYOffset < 400){
+        if(window.pageYOffset < 400 || window.pageYOffset > 4280 ){
             this.setState({ showPointer:false });
         }
         if(window.pageYOffset > 400){

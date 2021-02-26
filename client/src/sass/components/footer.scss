@@ -62,3 +62,64 @@
     text-decoration: none !important;
     cursor: pointer;
 }
+@media (max-width:998px) and (min-width:768.01px){
+    .A_mail_name{
+        display:none;
+    }
+}
+@media (max-width:768px){
+    .git_name{
+        padding-top: 5px;
+    }
+}
+@media (max-width:400px){
+
+    .links_wrapper{
+        margin-top: 50px;
+        h3,h4{
+            font-weight: 500;
+            font-size: 0.6rem;
+        }
+        .git_image{
+           height: 40%;
+        }
+        .mail_img{
+            height: 15px;
+            vertical-align: baseline;
+        }
+        .follow_section{
+            margin-top: 5px;
+            margin-right: 100px;
+        }
+        
+    } 
+    .dsg_wrapper{
+        margin-top: 30px;
+        width: 100%;
+        .name_text{
+            font-size:1.2rem;
+        }
+        .sign_img{
+           height: 30px;
+        }
+        .clg_name{
+            margin-top:6px;
+            font-size:0.8rem;
+            width:60%;
+        }
+    }
+    .A_link_name{
+        img{
+            width:40%;
+            padding:0px !important;
+        }
+    }
+    .A_follow{
+        padding-right: 10px;
+        padding-top: 8px;
+    }
+    .git_name{
+        padding-top: 5px;
+    }
+    
+}
