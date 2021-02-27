@@ -36,6 +36,7 @@ class Homepage extends Component {
       }
         
     render() {
+        console.log(window.pageYOffset)
         return (
             <div className="background_">
                 <div >
@@ -52,6 +53,7 @@ class Homepage extends Component {
                     </div>
                 </div>
                {this.state.showPointer && <div>
+                    {/* {window.pageYOffset<2200 &&<img src={Timeline_Arrow} className="timeline-arrow" />} */}
                     <img src={Timeline_Arrow} className="timeline-arrow" />
                 </div>}
                 <div className="timeline-bg mb-5">
@@ -65,8 +67,10 @@ class Homepage extends Component {
                        <Colaborate /> 
                     </div>
                 </div>
-                               
-                <Footer/>
+                    <div style={{zIndex:"200"}}>
+                          <Footer/>
+                    </div>         
+                
             </div>
         );
     }
