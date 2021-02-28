@@ -191,3 +191,8 @@
     }
 }
 
+@media (max-height:768px) and (max-width:1366px){
+    .home_wrapper{
+        background-image: url("../../assets/topsection_1366.svg");
+    }
+}

@@ -19,7 +19,6 @@ class Homepage extends Component {
         window.addEventListener('scroll', this.listenToScroll);
         const project= await axios.get(base + '/api/project');
         this.setState({projects:project.data});
-        console.log(this.state.projects);
       }
       
       componentWillUnmount() {
@@ -27,7 +26,7 @@ class Homepage extends Component {
       }
       
       listenToScroll = () => {
-        if(window.pageYOffset < 400 || window.pageYOffset > 4280 ){
+        if(window.pageYOffset < 400){
             this.setState({ showPointer:false });
         }
         if(window.pageYOffset > 400){
@@ -36,7 +35,6 @@ class Homepage extends Component {
       }
         
     render() {
-        console.log(window.pageYOffset)
         return (
             <div className="background_">
                 <div >

@@ -11,7 +11,7 @@ class Colaborate extends Component {
                         <h1 className="colaborate-title">Get your work done without any hasle</h1>
                         <h5 className="colaborate-teaser">Why think small ??   .   Why work offline ??   .   Why maintain paper resume ??</h5>
                         <h3 className="colaborate-label">Give it a Thought</h3>
-                        <Button variant="contained" className="colaborate-button">Send me a Mail</Button>
+                        <a href={"mailto:" + email} ><Button variant="contained" className="colaborate-button">Send me a Mail</Button></a>
                     </div>
                 </div>
             </div>

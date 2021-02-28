@@ -1,1 +1,1 @@
-export let base = 'http://13.127.98.159'
+export let base = 'http://naman.today'
