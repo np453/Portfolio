@@ -24,11 +24,11 @@ export default class Myprojects extends Component {
                            <div className="d-flex flex-row justify-content-between w-50 align-items-center">
                               <div className="d-flex">
                                <img src={gitlink_img} />
-                               <a href={project.githublink} className="link_name">Github</a>
+                               <a href={project.github} className="link_name">Github</a>
                               </div>
                               <div className="d-flex"> 
                                <img src={weblink_img} />
-                               <a href={"https://www." + project.link} className="link_name">Website link</a>
+                               <a href={"https://" + project.link} className="link_name">Website link</a>
                               </div>
                            </div>
                         </div>

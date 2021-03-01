@@ -61,6 +61,9 @@
 .A_link_name{
     text-decoration: none !important;
     cursor: pointer;
+    img{
+        padding-bottom: 10px;
+    }
 }
 
 @media (max-width:1100px){

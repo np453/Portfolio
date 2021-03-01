@@ -27,7 +27,7 @@
 }
     .navbar-toggler .top-bar {
         transform: rotate(45deg);
-        transform-origin: -10%;
+        transform-origin: 3%;
     }
     
     .navbar-toggler .middle-bar {
@@ -36,7 +36,7 @@
     
     .navbar-toggler .bottom-bar {
         transform: rotate(-45deg);
-        transform-origin: -10%;
+        transform-origin: 3%;
     }
     
     .navbar-toggler.collapsed .top-bar {
@@ -78,3 +78,14 @@ button.navbar-toggler:focus, .navbar-toggler:active, .navbar-toggler-icon:focus{
         // margin-top: 4px
     }
 } 
+@media (max-width: 500px){
+    .nav-links{
+        font-size: 0.8rem !important;
+    }
+    .navbar-nav{
+        a{
+            padding: 5px !important;
+        }
+
+    }
+}

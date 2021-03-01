@@ -61,7 +61,7 @@ class Homepage extends Component {
                     <div className="d-flex flex-column justify-content-center align-items-center mt-5">
                        <Projects projects={this.state.projects}/> 
                     </div>
-                    <div className="d-flex flex-column justify-content-center align-items-center mt-5">
+                    <div id="collaborate" className="d-flex flex-column justify-content-center align-items-center mt-5">
                        <Colaborate /> 
                     </div>
                 </div>

@@ -24,8 +24,8 @@ class Navbar extends Component {
                     </button>
                     <div className="collapse navbar-collapse" id="landingpagenavbar">
                         <div className="navbar-nav ml-auto align-items-center">
-                            <Link to="/" className="p-2" style={{color:"#B5B5B5", textDecoration:"none", fontFamily:"$font-1"}}><div className="nav-links">collaborate</div></Link>
-                            <Link to="/" className="p-2" style={{color:"#B5B5B5", textDecoration:"none", fontFamily:"$font-1"}}><div className="nav-links">github</div></Link>
+                            <a href="/#collaborate" className="p-2" style={{color:"#B5B5B5", textDecoration:"none", fontFamily:"$font-1"}}><div className="nav-links">collaborate</div></a>
+                            <a href="https://github.com/np453" className="p-2" style={{color:"#B5B5B5", textDecoration:"none", fontFamily:"$font-1"}}><div className="nav-links">github</div></a>
                         </div>
                     </div>
                     

@@ -30,7 +30,7 @@
 }
 .background_{
     background: #606060;
-    background-image: url(../../assets/line_bg.svg);
+    background-image: url(../../assets/line_bg.svg) !important;
     background-size: contain;
     background-repeat: repeat-y;
 }
@@ -52,17 +52,17 @@
 
 @media (max-width:1400px){
     .home_wrapper{
-        background-image: url(../../assets/topsection_1400.svg);
+        background-image: url(../../assets/topsection_1400.svg) !important;
     }
 }
 @media (max-width:1100px){
     .home_wrapper{
-        background-image: url(../../assets/topsection_1100.svg);
+        background-image: url(../../assets/topsection_1100.svg) !important;
     }
     .desig_wrapper{
         padding-top: 80% !important;
         padding-left: 4%;
-        width:60%;
+        width:60% ;
         .desig_text{
             font-size:2.5rem !important;
         }  
@@ -70,7 +70,7 @@
 }
 @media (max-width:900px){
     .home_wrapper{
-        background-image: url(../../assets/topsection_900.svg);
+        background-image: url(../../assets/topsection_900.svg) !important;
     }
     .desig_wrapper{
         padding-top: 85% !important;
@@ -84,7 +84,7 @@
 
 @media (max-width:700px){
     .home_wrapper{
-        background-image: url(../../assets/topsection_700.svg);
+        background-image: url(../../assets/topsection_700.svg) !important;
     }
     .desig_wrapper{
         padding-top: 105% !important;
@@ -97,7 +97,7 @@
 }
 @media (max-width:500px){
     .home_wrapper{
-        background-image: url(../../assets/topsection_500.svg);
+        background-image: url(../../assets/topsection_500.svg) !important;
     }
     .desig_wrapper{
         padding-top: 155% !important;
@@ -116,7 +116,7 @@
 }
 @media (max-width:440px){
     .home_wrapper{
-        background-image: url(../../assets/topsection_440.svg);
+        background-image: url(../../assets/topsection_440.svg) !important;
     }
     .desig_wrapper{
         padding-top: 145% !important;
@@ -135,26 +135,27 @@
 }
 @media (max-width:400px){
     .home_wrapper{
-        background-image: url(../../assets/topsection_440.svg);
+        background-image: url(../../assets/topsection_440.svg) !important;
     }
     .desig_wrapper{
         padding-top: 140% !important;
         padding-left: 4%;
         width:60%;
         .desig_text{
-            font-size:2rem !important;
+            font-size:1.5rem !important;
         }  
     }
-    .intro_wrapper{     
+    .intro_wrapper{   
+        right:10% !important;  
         .intro_text{
-            font-size:2.5rem !important;
+            font-size:1.8rem !important;
             
         }
     }
 }
 @media (max-width:350px){
     .home_wrapper{
-        background-image: url(../../assets/topsection_350.svg);
+        background-image: url(../../assets/topsection_350.svg) !important;
     }
     .desig_wrapper{
         padding-top: 135% !important;
@@ -173,17 +174,18 @@
 }
 @media (max-width:300px){
     .home_wrapper{
-        background-image: url(../../assets/topsection_350.svg);
+        background-image: url(../../assets/topsection_350.svg) !important;
     }
     .desig_wrapper{
-        padding-top: 135% !important;
-        padding-left: 4%;
-        width:60%;
+        padding-top: 140% !important;
+        padding-left: 4% !important;
+        width:60% !important;
         .desig_text{
             font-size:1.2rem !important;
         }  
     }
-    .intro_wrapper{     
+    .intro_wrapper{ 
+        top: 22% !important;     
         .intro_text{
             font-size:1.2rem !important;
             
@@ -193,6 +195,6 @@
 
 @media (max-height:768px) and (max-width:1366px){
     .home_wrapper{
-        background-image: url("../../assets/topsection_1366.svg");
+        background-image: url("../../assets/topsection_1366.svg") ;
     }
 }
