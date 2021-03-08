@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import {BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 //scss file
@@ -11,6 +11,14 @@ import Homepage from './views/home';
 import ScrollToTop from './common/ScrollToTop';
 
 function App() {
+  const loader = document.querySelector(".preloader");
+
+  const showLoader = () => loader.classList.remove("preloader");
+  const addClass = () => loader.classList.add("loader-hide");
+    useEffect(() => {
+      showLoader();
+      addClass();
+    }, []);
   return (
     <div>
        <Router>

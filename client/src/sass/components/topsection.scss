@@ -193,8 +193,8 @@
     }
 }
 
-@media (max-height:768px) and (max-width:1366px){
+@media (max-height:768px) and (max-width:1366px) and (min-height:700px) and (min-width:1200px){
     .home_wrapper{
-        background-image: url("../../assets/topsection_1366.svg") ;
+        background-image: url("../../assets/topsection_1366.svg") !important;
     }
 }

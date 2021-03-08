@@ -32,8 +32,101 @@
     <meta name="msapplication-TileColor" content="#da532c">
    
     <title>Naman</title>
+    <style>
+      .preloader {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        background-color: #606060;
+        padding: 0;
+        margin: 0;
+        height: 100vh;
+      }
+  
+      .rotate {
+        animation: rotation 1s infinite linear;
+      }
+  
+      .loader-hide {
+        display: none;
+      }
+
+      body {
+        margin: 0;
+      }
+  
+      @keyframes rotation {
+        from {
+          transform: rotate(0deg);
+        }
+  
+        to {
+          transform: rotate(359deg);
+        }
+      }
+        .dot-flashing {
+              position: relative;
+              width: 10px;
+              height: 10px;
+              border-radius: 5px;
+              background-color: #DECA62;
+              color: #DECA62;
+              animation: dotFlashing 1s infinite linear alternate;
+              animation-delay: .5s;
+        }
+
+        .dot-flashing::before, .dot-flashing::after {
+          content: '';
+          display: inline-block;
+          position: absolute;
+          top: 0;
+        }
+
+        .dot-flashing::before {
+          left: -15px;
+          width: 10px;
+          height: 10px;
+          border-radius: 5px;
+          background-color: #DECA62;
+          color: #DECA62;
+          animation: dotFlashing 1s infinite alternate;
+          animation-delay: 0s;
+        }
+
+        .dot-flashing::after {
+          left: 15px;
+          width: 10px;
+          height: 10px;
+          border-radius: 5px;
+          background-color: #DECA62;
+          color: #DECA62;
+          animation: dotFlashing 1s infinite alternate;
+          animation-delay: 1s;
+        }
+
+        @keyframes dotFlashing {
+          0% {
+            background-color: #DECA62;
+          }
+          50%,
+          100% {
+            background-color: #fff8d8;
+          }
+        }
+
+    </style>
   </head>
   <body>
+    <div style="margin:'0px'; padding:'0px';" class="preloader">
+      <div class="col-3" style="width:'33.33%'; display:'flex'; justify-content:'center'; align-items:'center'">
+        <div class="snippet" data-title=".dot-flashing">
+          <div class="stage">
+            <div class="dot-flashing"></div>
+          </div>
+        </div>
+      </div>
+    </div>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
     <!--
