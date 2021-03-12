@@ -26,7 +26,7 @@ class Interest extends Component {
                             <div className="col-md-6 skill-wrapper">
                                 <img src={Figma} className="img img-fluid skill-img" />
                                 <h4 className="description-col-text">
-                                Prototyping is one of the major needs for mordern development.
+                                Prototyping is one of the major needs for modern development.
                                 </h4>
                             </div>
                         </div>
