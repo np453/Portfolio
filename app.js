@@ -6,7 +6,11 @@ const bodyParser = require('body-parser');
 const dotenv = require('dotenv');
 const path = require('path');
 
+
+//routes
 const project = require('./routes/project');
+const blog = require('./routes/blog');
+const auth = require('./routes/auth');
 
 
 //Port
@@ -26,6 +30,9 @@ app.use(express.json());
 
 //routes
 app.use('/api/project',project);
+app.use('/api/auth',auth);
+app.use('/api/blog',blog);
+
 
 //connect to DB
 mongoose.connect(process.env.MONGO_URI, { useNewUrlParser: true, useUnifiedTopology: true }, () => console.log("Database is connected!"));
