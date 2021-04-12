@@ -29,6 +29,14 @@ router.get('/eachblog/:id', async (req, res) =>{
         return res.status(200).send(blog);
     }
 })
+router.get('/delete/:id', async (req, res) =>{
+    const blog = await Blog.findByIdAndRemove({_id:req.params.id},console.log("blog deleted"));
+    if(blog)return res.status(200).send('deleted');
+    else{
+        return res.send('error occured');
+    }
+    
+})
 router.post('/updatestatus', async (req, res)=>{
     const blog = await Blog.findByIdAndUpdate(req.body.id,
         {

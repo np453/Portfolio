@@ -14,12 +14,15 @@
 
 @import './components/myprojects.scss';
 
-@import './components/dashboard.scss';
-
 @import './components/colaborate.scss';
 
 @import './components/blog.scss';
 
+@import './components/editor.scss';
+
+@import './components/scrollbar.scss';
+
+@import './components/dashboard.scss';
 
 html {
     scroll-behavior: smooth;

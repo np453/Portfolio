@@ -1,1 +1,1 @@
-export let base = 'https://naman.today'
+export let base = 'http://localhost:5151'

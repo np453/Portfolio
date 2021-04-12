@@ -16,3 +16,46 @@
         }
     }
 }
+.blogmanager_outer_wrapper{
+    background: #606060;
+    min-height: 70vh;
+  .heading_wrapper{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 2rem;
+        .blog_dashboard_title{
+            font-family: $font-1;
+            font-weight: 600;
+            color: #E1DDDD;
+            font-size: 3rem;
+        }
+    }  
+}
+
+.blog_list_wrapper{
+    .dashboard_blog_display{
+        background: #6f6f6f;
+        padding: 2rem;
+        border-radius: 10px;
+        margin-top: 1rem;
+        h2,h5,h4{
+            font-family: $font-1;
+            color: #E1DDDD;
+        }
+        .html_blog_content{
+            color: #E1DDDD !important;
+            background-color: none !important;
+        }
+    }
+}
+
+.button_wrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    .delete_blog{
+        margin-left: 1rem;
+        background-color: #DE7162 !important;
+    }
+}

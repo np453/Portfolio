@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, Redirect } from 'react-router-dom';
+import Cookies from 'js-cookie';
 import axios from 'axios';
 import { base } from '../../base';
 
@@ -62,6 +63,9 @@ class Dashboard extends Component {
         }
 
     render() {
+        if(Cookies.get("admintokenSSID")==undefined){
+            return <Redirect to="/admin_login"></Redirect>
+        }
         const el = this.state.showapi === true ?
                 <div className="container">
                 <div className="row">
