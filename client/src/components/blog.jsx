@@ -33,21 +33,24 @@ class Blog extends Component {
     render() {
         return (
             <div className="background_">
-                <Navbar />
-                <div className="container-fluid blog-topsection-wrapper">
-                    <h1 className="blog-title">Blog</h1>
-                </div>
                 <div>
-                    {/* {window.pageYOffset<2200 &&<img src={Timeline_Arrow} className="timeline-arrow" />} */}
-                    <img src={Timeline_Arrow} className="timeline-arrow" />
-                </div>
-                <div className="blog_list_wrapper">
-                <div className="d-flex flex-column justify-content-center align-items-center mt-5">
-                    <Eachblog />
+                    <Navbar />
+                    <div className="container-fluid blog-topsection-wrapper">
+                        <h1 className="blog-title">Blog</h1>
                     </div>
+                    <div>
+                        {/* {window.pageYOffset<2200 &&<img src={Timeline_Arrow} className="timeline-arrow" />} */}
+                        <img src={Timeline_Arrow} className="timeline-arrow" />
+                    </div>
+                    <div className="blog_list_wrapper">
+                        <div className="d-flex flex-column justify-content-center align-items-center mt-5">
+                            <Eachblog />
+                            <Eachblog />
+                            <Eachblog />
+                        </div>
+                    </div>
+                    <Footer />
                 </div>
-                
-                <Footer />
             </div>
         );
     }
