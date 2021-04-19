@@ -133,6 +133,8 @@ class Dashboard extends Component {
                         
                     </ul>
                     <Link style={{ color:"black", textDecoration:"none" }} to="/">Back to Home</Link>
+                    <br></br>
+                    <Link style={{ color:"black", textDecoration:"none" }} to="/blog_dashboard">Go to Blogs Dashboard</Link>
                 </div>
                 {/* displaying element */}
                 

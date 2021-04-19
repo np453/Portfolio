@@ -12,6 +12,7 @@ import Button from '@material-ui/core/Button';
 import { base } from '../base';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import moment from 'moment-js';
 
 
 
@@ -39,6 +40,7 @@ const Blogeditor = props =>{
             name:username,
             email:email,
             title:title,
+            date:moment().format("DD/MM/YYYY"),
             content: draftToHtml(convertToRaw(editorstate.getCurrentContent()))
         }
         const blogdata = await axios.post(base + '/api/blog/',payload);

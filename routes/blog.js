@@ -6,6 +6,7 @@ router.post('/', async (req, res) => {
         name: req.body.name,
         email: req.body.email,
         title:req.body.title,
+        date: req.body.date,
         content: req.body.content,
         filename: req.body.filename,
         admincheck:"pending"
@@ -21,6 +22,16 @@ router.post('/', async (req, res) => {
 router.get('/', async (req, res) =>{
     const allblogs = await Blog.find({});
     res.send(allblogs);
+})
+router.get('/post', async (req, res) =>{
+    const posted = [];
+    const allblogs = await Blog.find({});
+    for(var i = 0; i < allblogs.length; i++){
+        if(allblogs[i].admincheck==="posted"){
+            posted.push(allblogs[i]);
+        }
+    }
+    res.send(posted);
 })
 router.get('/eachblog/:id', async (req, res) =>{
     const blog = await Blog.findById(req.params.id);

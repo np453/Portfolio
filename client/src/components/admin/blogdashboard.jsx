@@ -46,7 +46,7 @@ class Blogdashboard extends Component {
                         </div>
                         <h1 className="blog_dashboard_title">Blog Manager</h1>
                         <div>
-                            <Button variant="contained" className="">Blog Showcase</Button>
+                            <Link to='/blog'><Button variant="contained" className="">Blog Showcase</Button></Link>
                         </div>
 
                     </div>
