@@ -4,6 +4,8 @@ import Cookies from 'js-cookie';
 import { Redirect } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 import { base } from '../../base';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 class Login extends Component {
     state={
@@ -22,12 +24,17 @@ class Login extends Component {
             email:this.state.data.email,
             password:this.state.data.password
         }
-        const {data} = await axios.post(base + '/api/auth/login',admindata);
-        // this.setState({id:jwt_decode(data)._id})
-        console.log(data)
-        this.setState({id:data});
-        Cookies.set('admintokenSSID',this.state.id, { expires: 1 });
-        this.setState({redirect:true})
+        try{
+            const {data} = await axios.post(base + '/api/auth/login',admindata);
+            // this.setState({id:jwt_decode(data)._id})
+            console.log(data)
+            this.setState({id:data});
+            Cookies.set('admintokenSSID',this.state.id, { expires: 1 });
+            this.setState({redirect:true})
+        }catch(e){
+            toast.warning('Wrong Userid/Password try again or come later :)');
+        }
+        
 
     }
 
@@ -45,6 +52,7 @@ class Login extends Component {
         }
         return (
             <div style={{backgroundColor:"#fff"}} className="vh-100 d-flex justify-content-center align-items-center container-fluid p-0">
+                <ToastContainer />
                 <div className="col-md-4">
                 <h3>Admin login</h3>
                 <form className="border rounded p-3 d-flex flex-column" onSubmit={this.handlesubmit}>

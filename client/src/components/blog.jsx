@@ -38,9 +38,9 @@ class Blog extends Component {
                 <div>
                     <Navbar />
                     <div className="container-fluid blog-topsection-wrapper">
-                        <h1 className="blog-title mb-4">Blogs</h1>
+                        <h1 className="blog-title mb-4">Wall of the Untold</h1>
                         <div className="button_wrapper_blog_section">
-                            <Link to="/editor"><button class="custom-btn-blog_section btn-7"><span>Write a Blog </span></button></Link>
+                            <Link to="/editor"><button class="custom-btn-blog_section btn-7"><span>Write a Story </span></button></Link>
                             <Link to="/"><button class="custom-btn-blog_section btn-7 ml-4"><span>Back to Home</span></button></Link>
                         </div>
                         
@@ -50,8 +50,8 @@ class Blog extends Component {
                         <img src={Timeline_Arrow} className="timeline-arrow" />
                     </div>
                     <div className="blog_list_wrapper">
-                        <div className="d-flex flex-column justify-content-center align-items-center mt-5">
-                            {blogs.map(m=>(
+                        <div className="d-flex flex-column justify-content-center align-items-center mt-3">
+                            {blogs.reverse().map(m=>(
                                 <Eachblog title={m.title} name={m.name} content={m.content} date={m.date} />
                             ))}
                             

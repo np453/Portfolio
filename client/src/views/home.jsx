@@ -7,6 +7,7 @@ import Projects from '../components/myprojects';
 import Colaborate from '../components/colaborate';
 import Timeline_Arrow from '../assets/timeline_arrow.svg';
 import { base } from '../base';
+import Blogsection from '../components/blogsection';
 
 class Homepage extends Component {
     state={
@@ -63,6 +64,9 @@ class Homepage extends Component {
                     </div>
                     <div id="collaborate" className="d-flex flex-column justify-content-center align-items-center mt-5">
                        <Colaborate /> 
+                    </div>
+                    <div className="d-flex flex-column justify-content-center align-items-center mt-5">
+                       <Blogsection /> 
                     </div>
                 </div>
                     <div style={{zIndex:"200"}}>
