@@ -31,7 +31,7 @@ router.get('/post', async (req, res) =>{
             posted.push(allblogs[i]);
         }
     }
-    res.send(posted);
+    res.send(posted.reverse());
 })
 router.get('/eachblog/:id', async (req, res) =>{
     const blog = await Blog.findById(req.params.id);

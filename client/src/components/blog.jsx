@@ -51,7 +51,7 @@ class Blog extends Component {
                     </div>
                     <div className="blog_list_wrapper">
                         <div className="d-flex flex-column justify-content-center align-items-center mt-3">
-                            {blogs.reverse().map(m=>(
+                            {blogs.map(m=>(
                                 <Eachblog title={m.title} name={m.name} content={m.content} date={m.date} />
                             ))}
                             
