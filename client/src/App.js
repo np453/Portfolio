@@ -40,7 +40,7 @@ function App() {
           <Route path="/dashboard" exact component={Dashboard} /> 
           <Route path="/blog_dashboard" exact component={Blogdashboard} /> 
           <Route path="/admin_login" exact component={Login} /> 
-          <Route path="/admin_register" exact component={Register} /> 
+          {/* <Route path="/admin_register" exact component={Register} />  */}
 
         </switch>
         {/* </ScrollToTop> */}

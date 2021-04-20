@@ -10,9 +10,9 @@ class Navbar extends Component {
         return (
             <div className="navbar__container container-fluid p-0">
                 <nav className={"navbar navbar-expand-lg "}>
-                    <div className="navbar-brand" style={{color:"#393939"}}>
+                    <Link to="/"><div className="navbar-brand" style={{color:"#393939"}}>
                     <img className="img img-fluid nav_icon" src={Navicon} alt="Navbar Icon"/>
-                    </div>
+                    </div></Link>
                     <button className="ml-auto pr-0 navbar-toggler collapsed" type="button" 
                         data-toggle="collapse" 
                         data-target="#landingpagenavbar"

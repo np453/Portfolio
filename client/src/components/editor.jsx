@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import { EditorState, convertToRaw, convertFromRaw, ContentState, convertFromHTML } from 'draft-js';
 import { Editor } from 'react-draft-wysiwyg';
 import { convertToHTML } from 'draft-convert';
@@ -53,6 +54,7 @@ const Blogeditor = props =>{
         <div className="editorpage_wrapper">
             <Navbar /><ToastContainer />
             <h1 className="editorpage_title">Write Your Own Blog</h1>
+            <Link to="/blog"><button class="custom-btn btn-3 ml-4"><span>Wall of Untold</span></button></Link>
             <form className="form_container" onSubmit={saveEditorContent}>
                 <div className="input_wrapper">
                     <label className="editorpage_lable" for="name">Name</label>
