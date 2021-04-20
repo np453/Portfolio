@@ -22,7 +22,6 @@ class Blog extends Component {
     componentWillUnmount() {
         window.removeEventListener('scroll', this.listenToScroll)
       }
-      
       listenToScroll = () => {
         if(window.pageYOffset < 0){
             this.setState({ showPointer:false });
